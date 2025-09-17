@@ -38,7 +38,7 @@ dir = reflect(eye, nor);
 
 **Fixed Code**:
 
-vec3 reflDir = reflect(dir, nor);
+dir = reflect(dir, nor);
 
 **How I found it**: The `reflect()` function requires (incident_direction, normal), not (eye_position, normal).
 
