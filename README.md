@@ -8,7 +8,7 @@ Muqiao Lei
 
 ### Bug 1: Incorrect Aspect Ratio Calculation
 
-**Location**: `raycast` function, line 8 **Original Code**:
+**Location**:  line 8 **Original Code**:
 
 H *= len * iResolution.x / iResolution.x;
 
@@ -20,7 +20,7 @@ H *= len * iResolution.x / iResolution.y;
 
 ### Bug 2: Invalid Variable Type Declaration
 
-**Location**: `mainImage` function, line 68 **Original Code**:
+**Location**:  line 68 **Original Code**:
 
 vec uv2 = 2.0 * uv - vec2(1.0);
 
@@ -32,7 +32,7 @@ vec2 uv2 = 2.0 * uv - vec2(1.0);
 
 ### Bug 3: Incorrect reflect() Function Parameters
 
-**Location**:  sdf3D` function, line 48 **Original Code**:
+**Location**:   line 48 **Original Code**:
 
 dir = reflect(eye, nor);
 
@@ -44,7 +44,7 @@ vec3 reflDir = reflect(dir, nor);
 
 ### Bug 4: Wrong UV Coordinates Passed to Raycast
 
-**Location**: `mainImage` function, line 71 **Original Code**:
+**Location**:  line 71 **Original Code**:
 
 raycast(uv, dir, eye, ref);
 
@@ -56,7 +56,7 @@ raycast(uv2, dir, eye, ref);
 
 ### Bug 5: Insufficient Raymarching Iterations
 
-**Location**: `march` function, line 13 **Original Code**:
+**Location**:  line 13 **Original Code**:
 
 for(int i = 0; i < 64; ++i) {
 
